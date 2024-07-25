@@ -23,14 +23,14 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">{{ .title }}</h2>
-                        <p class="text-white-50">{{ .desc }}</p>
+                        <h2 class="text-black mb-4">{{ .title }}</h2>
+                        <p class="text-black-50">{{ .desc }}</p>
                         {{ if .button.enable }}
                         <a class="btn btn-primary about-btn" href="{{ .button.url }}">{{ .button.text }}</a>
                         {{ end }}
                     </div>
                 </div>
-                <img class="img-fluid" src="{{ .image }}" alt="..." />
+                <!-- <img class="img-fluid" src="{{ .image }}" alt="..." /> -->
             </div>
         </section>
         {{ end }}
@@ -180,7 +180,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="row gx-4 gx-lg-5 mt-4">
+                <div class="row gx-4 gx-lg-5 mt-4" >
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">

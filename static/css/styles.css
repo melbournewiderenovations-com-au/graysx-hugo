@@ -11696,6 +11696,30 @@ body {
   color: #fff;
 }
 
+#about {
+  background-image: url('../assets/img/aboutus.jpg');
+  background-size: cover; /* Adjust this as needed */
+  background-position: center; /* Adjust this as needed */
+  background-repeat: no-repeat; /* Adjust this as needed */
+  /*padding: 20px;  Optional: add some padding to ensure content isn't too close to the edges */
+}
+
+#contact {
+  background-image: url('../assets/img/contactus.jpg');
+  background-size: cover; /* Adjust this as needed */
+  background-position: center; /* Adjust this as needed */
+  background-repeat: no-repeat; /* Adjust this as needed */
+  /*padding: 20px;  Optional: add some padding to ensure content isn't too close to the edges */
+}
+
+#background-div-contact-address {
+  background-image: url('../assets/img/bg-signup.jpg');
+  background-size: cover; /* Adjust this as needed */
+  background-position: center; /* Adjust this as needed */
+  background-repeat: no-repeat; /* Adjust this as needed */
+  padding: 20px; /* Optional: add some padding to ensure content isn't too close to the edges */
+}
+
 .footer {
   padding: 5rem 0;
 }
