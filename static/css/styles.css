@@ -11584,6 +11584,12 @@ body {
   max-width: 20rem;
   font-size: 1rem;
 }
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .masthead h1, .masthead .h1 {
+    letter-spacing: normal !important; /* Remove letter spacing for mobile view */
+  }
+}
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
     font-size: 4rem;
@@ -11697,6 +11703,9 @@ body {
   color: #fff;
 }
 
+
+
+
 #about {
   position: relative;
   overflow: hidden; /* Ensure the pseudo-element stays within the bounds of the section */
@@ -11808,8 +11817,6 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .container-header-single {
   width: 80%;
   margin: auto;
@@ -11818,17 +11825,6 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
-.container-single {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
 
 .site-header-single {
   background: #000;
@@ -11864,6 +11860,50 @@ body {
 .nav-single li {
   margin-left: 20px;
 }
+
+/* Menu toggle button for mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto; /* Ensures the hamburger icon aligns to the right */
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+  .container-header-single {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-single ul {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    width: 100%;
+  }
+
+  .nav-single ul.show {
+    display: flex;
+  }
+
+  .nav-single li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+
 
 .nav-single a {
   color: #fff;

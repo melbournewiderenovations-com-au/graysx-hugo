@@ -19,6 +19,11 @@
                     <li><a href="/#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
     <main class="site-content-single">
@@ -27,4 +32,14 @@
         </div>
     </main>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navSingle = document.querySelector('.nav-single ul');
+    
+      menuToggle.addEventListener('click', function() {
+        navSingle.classList.toggle('show');
+      });
+    });
+    </script>
 </html>
