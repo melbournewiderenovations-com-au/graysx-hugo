@@ -7956,6 +7956,7 @@ textarea.form-control-lg {
 .text-black-50 {
   --bs-text-opacity: 1;
   color: rgba(0, 0, 0, 0.5) !important;
+  font-weight: 700 !important;
 }
 
 .text-white-50 {
@@ -11697,12 +11698,31 @@ body {
 }
 
 #about {
+  position: relative;
+  overflow: hidden; /* Ensure the pseudo-element stays within the bounds of the section */
+  /* padding: 20px; Optional: adjust padding as needed */
+}
+
+#about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('../assets/img/aboutus.jpg');
   background-size: cover; /* Adjust this as needed */
   background-position: center; /* Adjust this as needed */
   background-repeat: no-repeat; /* Adjust this as needed */
-  /*padding: 20px;  Optional: add some padding to ensure content isn't too close to the edges */
+  filter: blur(10px);
+  z-index: 0; /* Ensure the background is behind the content */
 }
+
+.container_about {
+  position: relative;
+  z-index: 1; /* Ensure the container content is above the blurred background */
+}
+
 
 #contact {
   background-image: url('../assets/img/contactus.jpg');
@@ -11728,7 +11748,7 @@ body {
 
 .about-btn {
   margin-top: -50px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 
